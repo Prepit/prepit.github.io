@@ -85,3 +85,59 @@ h2 {
   color: #666;
 }
 
+/* recipe page */
+.recipe-page h2 {
+  margin-bottom: 20px;
+}
+
+.recipe-main-img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+/* meta */
+.recipe-meta {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.recipe-meta div {
+  text-align: center;
+}
+
+.meta-number {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.meta-label {
+  font-size: 14px;
+  color: #777;
+}
+
+.recipe-category {
+  margin-bottom: 30px;
+}
+
+/* ingredients & instructions */
+.ingredients,
+.instructions {
+  padding-left: 20px;
+}
+
+.mark {
+  font-weight: bold;
+  margin-right: 6px;
+}
+
+/* info box */
+.info-box {
+  background: #f6f6f6;
+  padding: 15px;
+  border-radius: 6px;
+  margin: 20px 0;
+}
