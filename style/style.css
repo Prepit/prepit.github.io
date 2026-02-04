@@ -141,3 +141,17 @@ h2 {
   border-radius: 6px;
   margin: 20px 0;
 }
+
+/* 強調用 数字 */
+.meta-number {
+  font-size: 36px;      /* ← はっきり大きく */
+  font-weight: 700;     /* ← 太字 */
+  color: #222;          /* ← 黒寄り */
+  display: block;
+  line-height: 1;
+}
+
+.meta-label {
+  font-size: 13px;
+  color: #888;
+}
