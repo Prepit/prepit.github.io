@@ -1,1 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Sardine Mashed Potatoes | Prepit</title>
+  <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <h1>Prepit</h1>
+  <p>NZ ingredients × Make-ahead recipes</p>
+</header>
+
+<main class="container recipe-page">
+
+  <h2>Sardine Mashed Potatoes</h2>
+
+  <img class="recipe-main-img" src="../images/sardine.jpg" alt="Sardine Soup">
+
+  <!-- meta info -->
+  <div class="recipe-meta">
+    <div>
+      <span class="meta-number">15</span>
+      <span class="meta-label">min</span>
+      <p>Time</p>
+    </div>
+    <div>
+      <span class="meta-number">2~3</span>
+      <span class="meta-label">days</span>
+      <p>Fridge Storage</p>
+    </div>
+  </div>
+
+  <p class="recipe-category">
+  Categories:
+  <a href="../category/fertility.html">Fertility-friendly</a>,
+  <a href="../category/easy-dinner.html">Easy Dinner</a>
+</p>
+
+  <!-- ingredients -->
+  <section>
+    <h3>Ingredients  Servings: 2</h3>
+    <ul class="ingredients">
+      <li>Drained Sardines (1 can)</li>
+      <li>Medium Potatoes (2)</li>
+      <li><span class="mark">◎</span> Butter or Olive oil (1-2 tbs)</li>
+      <li><span class="mark">◎</span> Milk (2-3 tbs)</li>
+      <li>Salt & pepper</li>
+      <li>Lemon juice (optional)</li>
+      <li>Mustard (optional)</li>
+      <li>Parsly (optional)</li>
+    </ul>
+  </section>
+
+  <!-- instructions -->
+  <section>
+    <h3>Instructions</h3>
+    <ol class="instructions">
+      <li>Peel and cut potatoes into small cubes(see tips).</li>
+      <li>Place the cubes in a microwave-safe bowl and cover with alid or plate.</li>
+      <li>Cook on high for 5-7 min, stir halfway through.</li>
+      <li>Check if soft by poking with a fork. If not soft,microwave in 1-2 min increments until fully tender.</li>
+      <li>Add <span class="mark">◎</span> and mush until smooth.</li>
+      <li>Gently mix in sardines, breaking them into samll pices.</li>
+      <li>Adjust seasoning.</li>
+    </ol>
+  </section>
+
+  <!-- allergy -->
+  <section class="info-box">
+    <h4>Allergy Information</h4>
+    <p>Contains fish, dairy, and mustard.</p>
+  </section>
+
+  <!-- tips -->
+  <section class="info-box">
+    <h4>Tips</h4>
+    <p>When sut potaoes, samaller cubes cook faster</p>
+  </section>
+
+  <!-- related -->
+  <section>
+    <h3>Related Recipes</h3>
+    <p>Coming soon…</p>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>© Prepit</p>
+</footer>
+
+</body>
+</html>
 
