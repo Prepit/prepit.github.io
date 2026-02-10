@@ -171,11 +171,16 @@ h2 {
   color: #000;
 }
 
-.logo a {
-  text-decoration: none;   /* 下線を消す */
-  color: inherit;          /* 親の色を使う */
+.logo img {
+  height: 48px;        /* ← まずはこのくらい */
+  width: auto;
+  display: block;
+  margin: 0 auto;      /* 中央寄せ */
 }
 
-.logo a:hover {
-  opacity: 0.8;            /* ほんのり反応 */
+@media (max-width: 600px) {
+  .logo img {
+    height: 40px;      /* スマホ用 */
+  }
 }
+
