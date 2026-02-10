@@ -192,3 +192,61 @@ h2 {
   color: #888;
   margin: 0;
 }
+
+.section-divider {
+  border: none;
+  border-top: 1px solid #e5e5e5;
+  margin: 48px 0;
+}
+
+/* Information */
+.info-section h2 {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 16px;
+}
+
+.info-list {
+  list-style: none;
+  padding: 0;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.info-list li {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.info-list a {
+  display: flex;
+  gap: 12px;
+  padding: 12px 4px;
+  text-decoration: none;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.info-date {
+  color: #888;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.info-title {
+  text-decoration: underline;
+}
+
+.info-list a:hover {
+  opacity: 0.6;
+}
+
+.info-more {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.info-more a {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #333;
+}
