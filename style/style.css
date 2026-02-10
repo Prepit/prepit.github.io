@@ -170,3 +170,12 @@ h2 {
 .recipe-category a:hover {
   color: #000;
 }
+
+.logo a {
+  text-decoration: none;   /* 下線を消す */
+  color: inherit;          /* 親の色を使う */
+}
+
+.logo a:hover {
+  opacity: 0.8;            /* ほんのり反応 */
+}
