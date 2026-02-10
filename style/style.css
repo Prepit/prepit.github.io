@@ -181,7 +181,7 @@ h2 {
 
 /* logo */
 .logo img {
-  height: 28px;      /* ← 小さくする（重要） */
+  height: 41px;      /* ← 小さくする（重要） */
   width: auto;
   margin: 0 auto 6px;
 }
@@ -192,8 +192,3 @@ h2 {
   color: #888;
   margin: 0;
 }
-
-body {
-  background: red !important;
-}
-
