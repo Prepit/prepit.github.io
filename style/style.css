@@ -278,7 +278,11 @@ h2 {
   text-align: center;
 }
 .logo {
-  max-height: 40px; /* 小さめに調整 */
+  max-height: 50px; /* 高さを制限 */
+  height: auto;      /* 自動調整 */
+  width: auto;       /* 横幅も自動調整 */
+  display: block;
+  margin: 0 auto;    /* 中央寄せ */
 }
 
 /* 検索フォーム */
