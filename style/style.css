@@ -171,19 +171,6 @@ h2 {
   color: #000;
 }
 
-.logo img {
-  height: 48px;        /* ← まずはこのくらい */
-  width: auto;
-  display: block;
-  margin: 0 auto;      /* 中央寄せ */
-}
-
-@media (max-width: 600px) {
-  .logo img {
-    height: 40px;      /* スマホ用 */
-  }
-}
-
 /* header */
 .site-header {
   text-align: center;
@@ -205,4 +192,5 @@ h2 {
   color: #888;
   margin: 0;
 }
+
 
