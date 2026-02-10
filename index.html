@@ -9,12 +9,30 @@
 <body>
 
 <header class="site-header">
-  <h1 class="logo">
-    <a href="index.html">
-      <img src="images/logo.png" alt="Prepit logo">
-    </a>
-  </h1>
+  <!-- 左端：メニューバー -->
+  <button class="menu-btn" aria-label="Open menu">
+    ☰
+  </button>
+
+  <!-- ロゴ中央 -->
+  <a href="index.html" class="logo-link">
+    <img src="images/logo.png" alt="Prepit logo" class="logo">
+  </a>
+
+  <!-- 右端：検索アイコン -->
+  <button class="search-btn" aria-label="Open search">
+    🔍
+  </button>
 </header>
+
+<!-- 検索フォーム（非表示） -->
+<section class="search-section hidden">
+  <form class="search-form" action="#" method="get">
+    <input type="text" name="q" placeholder="Search recipes..." />
+    <button type="submit">Search</button>
+  </form>
+</section>
+
 
 
 <nav class="main-nav">
