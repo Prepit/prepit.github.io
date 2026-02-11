@@ -10,22 +10,29 @@
 <body>
 
 <header class="site-header">
-  <button class="menu-btn" id="menuBtn">☰</button>
+  <button class="menu-btn">☰</button>
 
-  <a href="index.html" class="logo-link">
-    <img src="images/logo.png" class="logo" alt="Prepit">
+  <a href="/" class="logo-link">
+    <img src="/images/logo.png" class="logo" alt="Prepit">
   </a>
 
-  <button class="search-btn" id="searchBtn">🔍</button>
+  <button class="search-btn">🔍</button>
 </header>
 
-<nav class="side-menu hidden" id="sideMenu">
+<!-- 検索バー -->
+<div class="search-box">
+  <input type="text" placeholder="Search recipes...">
+</div>
+
+<!-- サイドメニュー -->
+<nav class="side-menu">
   <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="info/index.html">Information</a></li>
-    <li><a href="#">Categories</a></li>
+    <li><a href="/">Home</a></li>
+    <li><a href="/categories.html">Categories</a></li>
+    <li><a href="/recipes.html">All Recipes</a></li>
   </ul>
 </nav>
+
 
 
 <section class="search-section hidden" id="searchSection">
@@ -150,6 +157,7 @@ searchInput.oninput = () => {
 };
 </script>
 
-  
+<script src="/js/header.js"></script>
+
 </body>
 </html>
