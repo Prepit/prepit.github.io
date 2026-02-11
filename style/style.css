@@ -367,3 +367,21 @@ h2 {
 .hidden {
   display: none;
 }
+
+@media (max-width: 768px) {
+  body {
+    font-size: 17px;
+  }
+
+  header {
+    padding: 12px;
+  }
+
+  .logo img {
+    height: 36px;
+  }
+
+  .recipe-card {
+    margin-bottom: 16px;
+  }
+}
