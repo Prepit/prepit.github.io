@@ -97,22 +97,42 @@
   <p>© Prepit</p>
 </footer>
 
-  <header class="site-header">
-  <div class="header-inner">
+  <script>
+/* 🔍 検索窓 開閉 */
+const searchBtn = document.getElementById("searchBtn");
+const searchSection = document.getElementById("searchSection");
 
-    <!-- menu -->
-    <button class="menu-btn">☰</button>
+searchBtn.onclick = () => {
+  searchSection.classList.toggle("hidden");
+};
 
-    <!-- logo -->
-    <a href="/" class="logo">
-      <img src="/images/logo.png" alt="Prepit">
-    </a>
+/* ☰ メニュー 開閉 */
+const menuBtn = document.getElementById("menuBtn");
+const sideMenu = document.getElementById("sideMenu");
 
-    <!-- search -->
-    <button class="search-btn">🔍</button>
+menuBtn.onclick = () => {
+  sideMenu.classList.toggle("open");
+  sideMenu.style.transform =
+    sideMenu.classList.contains("open")
+      ? "translateX(0)"
+      : "translateX(-100%)";
+};
 
-  </div>
-</header>
+/* 🔎 レシピ検索 */
+const searchInput = document.getElementById("searchInput");
+const recipes = document.querySelectorAll(".recipe-card");
+
+searchInput.oninput = () => {
+  const keyword = searchInput.value.toLowerCase();
+
+  recipes.forEach(recipe => {
+    const title = recipe.dataset.title;
+    recipe.style.display =
+      title.includes(keyword) ? "block" : "none";
+  });
+};
+</script>
+
 
 </body>
 </html>
