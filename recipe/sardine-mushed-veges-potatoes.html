@@ -97,43 +97,7 @@
   <p>© Prepit</p>
 </footer>
 
-  <script>
-/* 🔍 検索窓 開閉 */
-const searchBtn = document.getElementById("searchBtn");
-const searchSection = document.getElementById("searchSection");
-
-searchBtn.onclick = () => {
-  searchSection.classList.toggle("hidden");
-};
-
-/* ☰ メニュー 開閉 */
-const menuBtn = document.getElementById("menuBtn");
-const sideMenu = document.getElementById("sideMenu");
-
-menuBtn.onclick = () => {
-  sideMenu.classList.toggle("open");
-  sideMenu.style.transform =
-    sideMenu.classList.contains("open")
-      ? "translateX(0)"
-      : "translateX(-100%)";
-};
-
-/* 🔎 レシピ検索 */
-const searchInput = document.getElementById("searchInput");
-const recipes = document.querySelectorAll(".recipe-card");
-
-searchInput.oninput = () => {
-  const keyword = searchInput.value.toLowerCase();
-
-  recipes.forEach(recipe => {
-    const title = recipe.dataset.title;
-    recipe.style.display =
-      title.includes(keyword) ? "block" : "none";
-  });
-};
-</script>
-
-
+ 
 </body>
 </html>
 
