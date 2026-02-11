@@ -497,7 +497,7 @@ h2 {
   border-bottom: 1px solid #eee;
   background: #fff;
   position: relative;
-  z-index: 1001; /* メニューより前に出る */
+  z-index: 999; /* メニューより前に出る */
 }
 
 /* ロゴ */
