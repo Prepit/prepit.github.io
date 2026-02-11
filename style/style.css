@@ -324,3 +324,46 @@ h2 {
   opacity: 0.8;
 }
 
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100%;
+  background: #fff;
+  border-right: 1px solid #eee;
+  padding: 60px 16px;
+  transform: translateX(-100%);
+  transition: transform 0.3s;
+  z-index: 200;
+}
+
+.side-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.side-menu li {
+  margin-bottom: 16px;
+}
+
+.side-menu a {
+  text-decoration: none;
+  color: #333;
+}
+
+.search-section {
+  max-width: 560px;
+  margin: 16px auto;
+  text-align: center;
+}
+
+.search-section input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.hidden {
+  display: none;
+}
