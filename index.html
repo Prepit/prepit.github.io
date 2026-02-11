@@ -9,29 +9,32 @@
 <body>
 
 <header class="site-header">
-  <!-- 左端：メニューバー -->
-  <button class="menu-btn" aria-label="Open menu">
-    ☰
-  </button>
+  <button class="menu-btn" id="menuBtn">☰</button>
 
-  <!-- ロゴ中央 -->
   <a href="index.html" class="logo-link">
-    <img src="images/logo.png" alt="Prepit logo" class="logo">
+    <img src="images/logo.png" class="logo" alt="Prepit">
   </a>
 
-  <!-- 右端：検索アイコン -->
-  <button class="search-btn" aria-label="Open search">
-    🔍
-  </button>
+  <button class="search-btn" id="searchBtn">🔍</button>
 </header>
 
-<!-- 検索フォーム（非表示） -->
-<section class="search-section hidden">
-  <form class="search-form" action="#" method="get">
-    <input type="text" name="q" placeholder="Search recipes..." />
-    <button type="submit">Search</button>
-  </form>
+<nav class="side-menu hidden" id="sideMenu">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="info/index.html">Information</a></li>
+    <li><a href="#">Categories</a></li>
+  </ul>
+</nav>
+
+
+<section class="search-section hidden" id="searchSection">
+  <input
+    type="text"
+    id="searchInput"
+    placeholder="Search recipes..."
+  >
 </section>
+
 
 
 
@@ -110,5 +113,42 @@
   <p>©Prepit</p>
 </footer>
 
+  <script>
+/* 🔍 検索窓 開閉 */
+const searchBtn = document.getElementById("searchBtn");
+const searchSection = document.getElementById("searchSection");
+
+searchBtn.onclick = () => {
+  searchSection.classList.toggle("hidden");
+};
+
+/* ☰ メニュー 開閉 */
+const menuBtn = document.getElementById("menuBtn");
+const sideMenu = document.getElementById("sideMenu");
+
+menuBtn.onclick = () => {
+  sideMenu.classList.toggle("open");
+  sideMenu.style.transform =
+    sideMenu.classList.contains("open")
+      ? "translateX(0)"
+      : "translateX(-100%)";
+};
+
+/* 🔎 レシピ検索 */
+const searchInput = document.getElementById("searchInput");
+const recipes = document.querySelectorAll(".recipe-card");
+
+searchInput.oninput = () => {
+  const keyword = searchInput.value.toLowerCase();
+
+  recipes.forEach(recipe => {
+    const title = recipe.dataset.title;
+    recipe.style.display =
+      title.includes(keyword) ? "block" : "none";
+  });
+};
+</script>
+
+  
 </body>
 </html>
