@@ -497,7 +497,7 @@ h2 {
   border-bottom: 1px solid #eee;
   background: #fff;
   position: relative;
-  z-index: 999; /* メニューより前に出る */
+  z-index: 1001; /* メニューより前に出る */
 }
 
 /* ロゴ */
@@ -528,7 +528,7 @@ h2 {
   border-right: 1px solid #ddd;
   transition: left 0.3s ease;
   padding: 20px;
-  z-index: 1000;     /* ヘッダーより下 */
+  z-index: 999;     /* ヘッダーより下 */
 }
 
 .side-menu.open {
@@ -545,7 +545,7 @@ h2 {
   background: #fff;      /* 背景色 */
   border-right: 1px solid #ddd;
   transition: left 0.3s ease; /* スライドアニメーション */
-  z-index: 1000;         /* ヘッダーより下に出る */
+  z-index: 999;         /* ヘッダーより下に出る */
   padding: 20px;
 }
 
