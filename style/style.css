@@ -535,3 +535,20 @@ h2 {
   left: 0;           /* 出てくる位置 */
 }
 
+
+.side-menu {
+  position: fixed;       /* 画面に固定 */
+  top: 0;                /* 上端に合わせる */
+  left: -260px;          /* 最初は画面外 */
+  width: 240px;           /* メニュー幅 */
+  height: 100%;           /* 高さいっぱい */
+  background: #fff;      /* 背景色 */
+  border-right: 1px solid #ddd;
+  transition: left 0.3s ease; /* スライドアニメーション */
+  z-index: 1000;         /* ヘッダーより下に出る */
+  padding: 20px;
+}
+
+.side-menu.open {
+  left: 0;               /* openクラスで画面に出る */
+}
